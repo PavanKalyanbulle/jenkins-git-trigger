@@ -1,14 +1,11 @@
 pipeline {
     agent any
-
-    triggers {
-        githubPush() // ✅ Auto trigger on GitHub push
     }
 
     stages {
         stage('Hello') {
             steps {
-                echo 'Hello pavan wellcome to Jenkins!'
+                echo 'Hello pavan wellcome to Jenkins auto trigger is not working!'
             }
         }
     }
