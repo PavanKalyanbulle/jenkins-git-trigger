@@ -1,10 +1,10 @@
 
 pipeline {
     agent any
+triggers {
+    pollSCM('H/5 * * * *')  // ✅ VALID!
+}
 
-    triggers {
-        scm('H/5 * * * *') // Jenkins polls GitHub every 5 mins
-    }
 
     stages {
         stage('Build') {
