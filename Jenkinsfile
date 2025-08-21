@@ -9,7 +9,7 @@ triggers {
     stages {
         stage('Build') {
             steps {
-                echo Hello! Code cssshanged in GitHub. Build started.'
+                echo 'Hello! Code cssshanged in GitHub. Build started.'
             }
         }
     }
