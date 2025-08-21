@@ -1,7 +1,7 @@
 pipeline {
     agent any
 triggers {
-    pollSCM('H/2 * * * *')  // ✅ VALID!
+    pollSCM('H/3 * * * *')  // ✅ VALID!
 }
 
 
