@@ -1,14 +1,15 @@
+
 pipeline {
     agent any
 
     triggers {
-        githubPush() // ✅ Auto trigger on GitHub push
+        scm('H/5 * * * *') // Jenkins polls GitHub every 5 mins
     }
 
     stages {
-        stage('Hello') {
+        stage('Build') {
             steps {
-                echo 'Hello pavan wellcome to Jenkins!'
+                echo 'Hello! Code changed in GitHub. Build started.'
             }
         }
     }
