@@ -1,5 +1,5 @@
 pipeline {
-
+    
     agent any
 triggers {
     pollSCM('H/1 * * * *')  // ✅ VALID!
@@ -9,7 +9,7 @@ triggers {
     stages {
         stage('Build') {
             steps {
-                echo ello! Code cssshanged in GitHub. Build started.'
+                echo 'Hello! Code changed in GitHub. Build started.'
             }
         }
     }
